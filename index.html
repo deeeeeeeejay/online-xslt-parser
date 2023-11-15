@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Online XSLT Parser by enbiso</title>
+        <title>FLIP Online XSLT Parser</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     </head>
@@ -39,18 +39,18 @@
 
                 var xmlEditor = ace.edit("xml-input");
                 xmlEditor.setOptions({maxLines: 100, minLines: 100});
-                xmlEditor.setTheme("ace/theme/monokai");
+                xmlEditor.setTheme("ace/theme/github_dark");
                 xmlEditor.getSession().setMode("ace/mode/xml");
 
                 var xsltEditor = ace.edit("xslt-input");
                 xsltEditor.setOptions({maxLines: 100, minLines: 100});
-                xsltEditor.setTheme("ace/theme/monokai");
+                xsltEditor.setTheme("ace/theme/github_dark");
                 xsltEditor.getSession().setMode("ace/mode/xml");
 
 
                 var outputEditor = ace.edit("xml-output");
                 outputEditor.setOptions({maxLines: 100, minLines: 100, readOnly: true});
-                outputEditor.setTheme("ace/theme/monokai");
+                outputEditor.setTheme("ace/theme/github_dark");
                 outputEditor.getSession().setMode("ace/mode/xml");
 
                 function parse() {
